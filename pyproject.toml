@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "introdoc"
+version = "0.1.0"
+description = ""
+authors = ["Danila <62538561+GD-alt@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyodbc = "^5.1.0"
+python-docx = "^1.1.2"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

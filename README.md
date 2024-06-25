@@ -29,10 +29,10 @@ Introdoc is a command-line tool, which provides hella load of options. Here's a 
 |  `--headers`  |    `-h`    |        If to include table headers into table (flag)        |             False             |
 | `--inullable` |    `-N`    |     If to include `Nullable?` column into table (flag)      |             False             |
 | `--onatural`  |    `-n`    | If included, `Nullable column` will contain `Yes` and `No`s |             False             |
-| `--sections`  |    `-s`    |        If to separate tables with their names (flag)        |             False             |
+| `--sections`  |    `-S`    |        If to separate tables with their names (flag)        |             False             |
 
 ## Examples
 
 - `py -m introdoc` will introspect all tables from `master` database on `(localdb)\\mssqllocaldb` server, and save them into `output.docx` file. Tables will be in English, without headers, `Nullable?` column, `Yes` and `No` values in `Nullable?` column, and not separated with their names.
 - `py -m introdoc -d AdventureWorks -s localhost -D 'ODBC Driver 17 for SQL Server' -t HumanResources.Department,HumanResources.Employee -l ru -h -N -n -s` will introspect `HumanResources.Department` and `HumanResources.Employee` tables from `AdventureWorks` database on `localhost` server, using `ODBC Driver 17 for SQL Server` driver, and save them into `output.docx` file. Tables will be in Russian, with headers, `Nullable?` column, `Yes` and `No` values in `Nullable?` column, and separated with their names.
-- `py -m introdoc -d 10210797 -S` (my usecase) will introspect all tables from `10210797` database on `(localdb)\\mssqllocaldb` server, and save them into `output.docx` file. Tables will be in English, without headers, `Nullable?` column, `Yes` and `No` values in `Nullable?` column, and not separated with their names.
+- `py -m introdoc -d 10210797 -S` (my usecase) will introspect all tables from `10210797` database on `(localdb)\\mssqllocaldb` server, and save them into `output.docx` file. Tables will be in English, without headers, `Nullable?` column, `Yes` and `No` values in `Nullable?` column, and separated with their names.
